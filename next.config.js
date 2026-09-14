@@ -7,11 +7,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/new-launch',
-        permanent: true,
-      },
-      {
         source: '/bannerghatta-road',
         destination: '/new-launch',
         permanent: true,
