@@ -42,16 +42,16 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://cocoacountysector88agurgaon.com'),
+  metadataBase: new URL('https://cocoacountysector88a.co.in'),
   title: 'Cocoa County Sector 88A | Luxury 3 & 4 BHK Gurgaon',
   description: "Cocoa County in Sector 88A, Dwarka Expressway, Gurgaon offers luxury 3 & 4 BHK homes with world-class amenities by County Group. Enquire now for brochure!",
   alternates: {
-    canonical: 'https://cocoacountysector88agurgaon.com/',
+    canonical: 'https://cocoacountysector88a.co.in/new-launch',
   },
   openGraph: {
     title: 'Cocoa County Sector 88A | Luxury 3 & 4 BHK Gurgaon',
     description: "Cocoa County in Sector 88A, Dwarka Expressway, Gurgaon offers luxury 3 & 4 BHK homes with world-class amenities by County Group. Enquire now for brochure!",
-    url: 'https://cocoacountysector88agurgaon.com/',
+    url: 'https://cocoacountysector88a.co.in/new-launch',
     siteName: 'Cocoa County',
     images: [
       {
@@ -90,9 +90,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "RealEstateAgent",
               "name": "Cocoa County Sector 88A",
-              "url": "https://cocoacountysector88agurgaon.com/",
-              "logo": "https://cocoacountysector88agurgaon.com/images/logo/Logo.webp",
-              "image": "https://cocoacountysector88agurgaon.com/images/hero/banner.webp",
+              "url": "https://cocoacountysector88a.co.in/new-launch",
+              "logo": "https://cocoacountysector88a.co.in/images/logo/Logo.webp",
+              "image": "https://cocoacountysector88a.co.in/images/hero/banner.webp",
               "description": "Cocoa County, Gurgaon's premium residential development in Sector 88A offering 3/4 BHK luxury residences.",
               "address": {
                 "@type": "PostalAddress",
@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
               "telephone": "+919718344024",
               "priceRange": "₹ 4 Crore Onwards",
               "sameAs": [
-                "https://cocoacountysector88agurgaon.com/"
+                "https://cocoacountysector88a.co.in/new-launch"
               ]
             })
           }}

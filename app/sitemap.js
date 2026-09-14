@@ -1,8 +1,8 @@
 export default function sitemap() {
-  const baseUrl = 'https://cocoacountysector88agurgaon.com'
+  const baseUrl = 'https://cocoacountysector88a.co.in'
   return [
     {
-      url: `${baseUrl}`,
+      url: `${baseUrl}/new-launch`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,

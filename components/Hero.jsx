@@ -96,14 +96,14 @@ const Hero = ({ setIsOpen }) => {
         }
 
         @keyframes livepulse {
-          0%  { box-shadow:0 0 0 0 rgba(212,175,55,0.6); }
-          70% { box-shadow:0 0 0 6px rgba(0, 75, 135,0); }
-          100%{ box-shadow:0 0 0 0 rgba(0, 75, 135,0); }
+          0%  { box-shadow:0 0 0 0 rgba(184, 138, 68,0.6); }
+          70% { box-shadow:0 0 0 6px rgba(184, 138, 68,0); }
+          100%{ box-shadow:0 0 0 0 rgba(184, 138, 68,0); }
         }
         @keyframes textBling {
-          0% { opacity: 0.7; text-shadow: 0 0 4px rgba(0, 75, 135,0.5); }
-          50% { opacity: 1; text-shadow: 0 0 14px rgba(0, 75, 135,1); }
-          100% { opacity: 0.7; text-shadow: 0 0 4px rgba(0, 75, 135,0.5); }
+          0% { opacity: 0.7; text-shadow: 0 0 4px rgba(184, 138, 68,0.5); }
+          50% { opacity: 1; text-shadow: 0 0 14px rgba(184, 138, 68,1); }
+          100% { opacity: 0.7; text-shadow: 0 0 4px rgba(184, 138, 68,0.5); }
         }
 
         @keyframes heroPriceBlink {
@@ -311,32 +311,32 @@ const Hero = ({ setIsOpen }) => {
         @media (min-width: 768px) {
           .hero-title-badge {
             display: inline-block;
-            background: rgba(8, 25, 48, 0.68);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 6px 18px;
-            border-radius: 12px;
-            border: 1px solid rgba(56, 189, 248, 0.28);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 75, 135, 0.25);
+            background: rgba(42, 22, 12, 0.82);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 8px 22px;
+            border-radius: 14px;
+            border: 1.5px solid rgba(184, 138, 68, 0.65);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 138, 68, 0.3);
           }
           .hero-subtitle-badge {
             display: inline-block;
-            background: rgba(8, 25, 48, 0.62);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 5px 16px;
+            background: rgba(42, 22, 12, 0.74);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 6px 18px;
             border-radius: 30px;
-            border: 1px solid rgba(56, 189, 248, 0.25);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(184, 138, 68, 0.45);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
           }
           .hero-bullet-badge {
-            background: rgba(8, 25, 48, 0.62);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 6px 16px;
+            background: rgba(42, 22, 12, 0.74);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 7px 18px;
             border-radius: 30px;
-            border: 1px solid rgba(56, 189, 248, 0.25);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(184, 138, 68, 0.45);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.38);
             width: fit-content;
             color: #ffffff;
           }
@@ -431,7 +431,7 @@ const Hero = ({ setIsOpen }) => {
             background: #FAF3E8;
             color: #B88A44;
             border: 1px solid #E8DEC8;
-            box-shadow: 0 2px 6px rgba(0, 75, 135, 0.12);
+            box-shadow: 0 2px 6px rgba(65, 32, 17, 0.12);
             margin-bottom: 10px;
             width: fit-content;
           }
@@ -525,7 +525,7 @@ const Hero = ({ setIsOpen }) => {
             font-size: 13.5px !important;
             font-weight: 600 !important;
             color: #2c4114 !important;
-            box-shadow: 0 3px 10px rgba(0, 75, 135, 0.08) !important;
+            box-shadow: 0 3px 10px rgba(65, 32, 17, 0.08) !important;
             text-shadow: none !important;
             text-align: center !important;
           }
@@ -582,7 +582,7 @@ const Hero = ({ setIsOpen }) => {
             background: linear-gradient(135deg, #B88A44 0%, #946B2D 100%) !important;
             color: #ffffff !important;
             border: none !important;
-            box-shadow: 0 4px 14px rgba(0, 75, 135, 0.35) !important;
+            box-shadow: 0 4px 14px rgba(184, 138, 68, 0.35) !important;
           }
           .hero-rera {
             font-size: 10px !important;
@@ -669,7 +669,7 @@ const Hero = ({ setIsOpen }) => {
               gap: '10px'
             }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #B88A44)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#B88A44', borderRadius: '50%', padding: '2.5px' }}>
               <polyline points="20 6 9 17 4 12" />
             </svg>
             <span className="hero-bullet-text" style={{ fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 17px)', fontWeight: '500', letterSpacing: '0.02em' }}>

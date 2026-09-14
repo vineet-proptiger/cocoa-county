@@ -651,7 +651,7 @@ const Navbar = ({ setIsOpen }) => {
             
             {/* Center Logo - Mathematically centered at 50% at all times */}
             <div className="navbar-logo">
-              <a href="#" className="navbar-brand">
+              <a href="/new-launch" className="navbar-brand">
                 <img src={logoImages.main} alt="Cocoa County" className="nav-logo" />
               </a>
             </div>

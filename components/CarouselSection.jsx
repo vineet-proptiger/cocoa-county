@@ -114,9 +114,9 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
         scrollMarginTop: '80px',
         padding: '56px 0 84px 0',
         background: id === 'amenities' 
-          ? 'linear-gradient(180deg, #06111e 0%, #0c1f38 50%, #050d18 100%)' 
-          : '#f9f9f9',
-        color: id === 'amenities' ? '#ffffff' : '#121212',
+          ? 'linear-gradient(180deg, #1C0E07 0%, #2A160C 50%, #150904 100%)' 
+          : '#FDFBF7',
+        color: id === 'amenities' ? '#ffffff' : '#2A160C',
         fontFamily: '"Montserrat", var(--font-montserrat), sans-serif',
         fontSize: '15px',
         lineHeight: '150%',
@@ -128,13 +128,13 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
       {/* ── Ambient Luxury Deep Glow (Amenities only) ── */}
       {id === 'amenities' && (
         <>
-          {/* Top-Right Soft Royal Navy Orb */}
+          {/* Top-Right Soft Warm Gold Orb */}
           <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#B88A44]/20 blur-[120px] pointer-events-none" />
           
-          {/* Bottom-Left Soft Sapphire Orb */}
-          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#0284C7]/25 blur-[120px] pointer-events-none" />
+          {/* Bottom-Left Soft Cocoa Glow Orb */}
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#412011]/35 blur-[120px] pointer-events-none" />
 
-          {/* Center Subtle Deep Navy Glow */}
+          {/* Center Subtle Deep Warm Gold Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] rounded-full bg-[#B88A44]/15 blur-[100px] pointer-events-none" />
         </>
       )}
@@ -204,9 +204,9 @@ const CarouselSection = ({ setIsOpen, title = "Glimpses of Masterpiece", subtitl
           </h2>
           {/* Decorative Line */}
           <div className="flex items-center justify-center mt-4 mb-3">
-            <div className={`w-16 h-[1.5px] ${id === 'amenities' ? 'bg-[#38BDF8]/70' : 'bg-[#B88A44]'}`}></div>
-            <div className={`w-2.5 h-2.5 rounded-full ${id === 'amenities' ? 'bg-[#38BDF8] mx-3 ring-4 ring-[#38BDF8]/25' : 'bg-[#B88A44] mx-3'}`}></div>
-            <div className={`w-16 h-[1.5px] ${id === 'amenities' ? 'bg-[#38BDF8]/70' : 'bg-[#B88A44]'}`}></div>
+            <div className="w-16 h-[1.5px] bg-[#B88A44]"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-[#B88A44] mx-3 ring-4 ring-[#B88A44]/25"></div>
+            <div className="w-16 h-[1.5px] bg-[#B88A44]"></div>
           </div>
         </div>
 

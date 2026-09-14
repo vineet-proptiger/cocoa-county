@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://cocoacountysector88agurgaon.com/sitemap.xml',
+    sitemap: 'https://cocoacountysector88a.co.in/sitemap.xml',
   }
 }

@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import { redirect } from 'next/navigation'
 
-export default function LokhandwalaRoadRedirect() {
-  redirect('/');
+export default function BannerghattaRoadRedirect() {
+  redirect('/new-launch')
 }
