@@ -114,8 +114,8 @@ const Navbar = ({ setIsOpen }) => {
 
         /* Sticky Collapsed state: container shrinks smoothly to fit logo */
         .header_style2.sticky .header_navigation2 {
-          width: 325px !important;
-          height: 54px !important;
+          width: 335px !important;
+          height: 56px !important;
           border-radius: 12px !important;
           background: transparent !important;
           backdrop-filter: blur(0px) !important;
@@ -192,11 +192,11 @@ const Navbar = ({ setIsOpen }) => {
           opacity: 1 !important;
           flex: 0 0 auto !important;
           flex-shrink: 0 !important;
-          min-width: 275px !important;
-          max-width: 305px !important;
-          height: 46px !important;
+          min-width: 280px !important;
+          max-width: 315px !important;
+          height: 50px !important;
           background-color: #fff !important;
-          padding: 4px 10px !important;
+          padding: 4px 12px !important;
           border-radius: 10px !important;
           box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12) !important;
           margin: 0 16px !important;
@@ -263,10 +263,10 @@ const Navbar = ({ setIsOpen }) => {
         .nav-logo,
         .header_style2.sticky .nav-logo,
         .header_style2.scrolled-up-expanded .nav-logo {
-          height: 38px !important;
-          min-height: 38px !important;
-          max-height: 40px !important;
-          max-width: 285px !important;
+          height: 42px !important;
+          min-height: 42px !important;
+          max-height: 44px !important;
+          max-width: 295px !important;
           width: 100% !important;
           flex-shrink: 0 !important;
           display: block;
@@ -324,11 +324,11 @@ const Navbar = ({ setIsOpen }) => {
           .header_style2.scrolled-up-expanded .header_navigation2 {
             width: 98% !important;
             padding: 0 18px !important;
-            height: 60px !important;
+            height: 62px !important;
           }
           .header_style2.sticky .header_navigation2 {
-            width: 300px !important;
-            height: 50px !important;
+            width: 310px !important;
+            height: 52px !important;
           }
           .header_style2 .nav-wing {
             max-width: 530px;
@@ -339,18 +339,19 @@ const Navbar = ({ setIsOpen }) => {
             letter-spacing: 0.6px !important;
           }
           .header_style2 .header_navigation2 .navbar-logo {
-            min-width: 270px !important;
-            max-width: 295px !important;
+            min-width: 275px !important;
+            max-width: 300px !important;
             padding: 4px 10px !important;
-            height: 44px !important;
+            height: 46px !important;
             margin: 0 12px !important;
           }
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 36px !important;
-            min-height: 36px !important;
-            max-width: 275px !important;
+            height: 38px !important;
+            min-height: 38px !important;
+            max-height: 40px !important;
+            max-width: 280px !important;
             transform: scale(1.04) !important;
           }
         }
@@ -360,12 +361,12 @@ const Navbar = ({ setIsOpen }) => {
           .header_style2 .header_navigation2,
           .header_style2.scrolled-up-expanded .header_navigation2 {
             max-width: 1620px !important;
-            height: 68px !important;
+            height: 70px !important;
             padding: 0 28px !important;
           }
           .header_style2.sticky .header_navigation2 {
-            width: 335px !important;
-            height: 54px !important;
+            width: 345px !important;
+            height: 58px !important;
           }
           .header_style2 .nav-wing {
             max-width: 630px;
@@ -380,18 +381,19 @@ const Navbar = ({ setIsOpen }) => {
             font-size: 14px !important;
           }
           .header_style2 .header_navigation2 .navbar-logo {
-            min-width: 300px !important;
-            max-width: 330px !important;
+            min-width: 310px !important;
+            max-width: 340px !important;
             padding: 4px 12px !important;
-            height: 48px !important;
+            height: 52px !important;
             margin: 0 16px !important;
           }
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 38px !important;
-            min-height: 38px !important;
-            max-width: 310px !important;
+            height: 44px !important;
+            min-height: 44px !important;
+            max-height: 46px !important;
+            max-width: 320px !important;
             transform: scale(1.05) !important;
           }
         }
@@ -401,12 +403,12 @@ const Navbar = ({ setIsOpen }) => {
           .header_style2 .header_navigation2,
           .header_style2.scrolled-up-expanded .header_navigation2 {
             max-width: 1840px !important;
-            height: 74px !important;
+            height: 76px !important;
             padding: 0 40px !important;
           }
           .header_style2.sticky .header_navigation2 {
-            width: 380px !important;
-            height: 58px !important;
+            width: 395px !important;
+            height: 62px !important;
           }
           .header_style2 .nav-wing {
             max-width: 710px;
@@ -421,18 +423,19 @@ const Navbar = ({ setIsOpen }) => {
             font-size: 15.5px !important;
           }
           .header_style2 .header_navigation2 .navbar-logo {
-            min-width: 340px !important;
-            max-width: 375px !important;
+            min-width: 355px !important;
+            max-width: 390px !important;
             padding: 5px 14px !important;
-            height: 52px !important;
+            height: 56px !important;
             margin: 0 20px !important;
           }
           .nav-logo,
           .header_style2.sticky .nav-logo,
           .header_style2.scrolled-up-expanded .nav-logo {
-            height: 42px !important;
-            min-height: 42px !important;
-            max-width: 355px !important;
+            height: 48px !important;
+            min-height: 48px !important;
+            max-height: 50px !important;
+            max-width: 370px !important;
             transform: scale(1.08) !important;
           }
         }
