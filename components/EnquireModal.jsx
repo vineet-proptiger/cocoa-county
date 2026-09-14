@@ -40,11 +40,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl shadow-[0_0_40px_rgba(0,0,0,0.5)] flex flex-col justify-center items-center p-8 mx-auto"
+        className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl flex flex-col justify-center items-center p-8 mx-auto"
         style={{
-          background: 'radial-gradient(circle at center, #0E2744 0%, #061426 100%)',
-          border: '1.5px solid #ffffff',
-          boxShadow: '0 0 50px rgba(0, 75, 135, 0.4), 0 20px 45px rgba(0,0,0,0.7)',
+          background: 'radial-gradient(135% 135% at 50% 20%, #412011 0%, #2A160C 60%, #180C06 100%)',
+          border: '1.5px solid #B88A44',
+          boxShadow: '0 0 50px rgba(184, 138, 68, 0.35), 0 20px 45px rgba(0, 0, 0, 0.7)',
           animation: 'slideInRight 0.45s cubic-bezier(0.22,1,0.36,1) forwards',
         }}
         onClick={(e) => e.stopPropagation()}
@@ -53,19 +53,22 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <div className="text-center mb-5 flex flex-col items-center">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 z-20 text-gray-900 hover:text-black hover:scale-110 transition-all flex items-center justify-center shadow-lg"
+              className="absolute top-4 right-4 z-20 text-[#412011] hover:text-[#B88A44] hover:scale-110 transition-all flex items-center justify-center shadow-lg"
               style={{ 
-                width: '28px', 
-                height: '28px', 
+                width: '30px', 
+                height: '30px', 
                 borderRadius: '50%', 
-                background: '#ffffff' 
+                background: '#ffffff',
+                border: '1px solid rgba(184, 138, 68, 0.6)'
               }}
+              aria-label="Close"
             >
               <X size={16} strokeWidth={2.5} />
             </button>
             <h3 className="text-xl sm:text-2xl font-bold tracking-wider mb-2 uppercase text-white" style={{ fontFamily: F_JOST }}>
               Enquire Now
             </h3>
+            <div className="w-10 h-[2px] bg-[#B88A44] rounded-full mx-auto mb-2"></div>
             <p className="text-white/80 text-[13px]" style={{ fontFamily: F_SANS }}>
               Please enter your details to know more
             </p>

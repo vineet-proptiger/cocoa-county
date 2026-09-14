@@ -33,12 +33,7 @@ const Footer = () => (
           <p className="mb-2">
             The group&apos;s legacy developments include Orange County, Olive County, Cherry County, the IGBC Gold-certified Cleo County, Coco County and County 107 — together accounting for over 159 lakh sq. ft. of developed area.
           </p>
-          <p className="mb-2">
-            Its ongoing portfolio includes Ivy County, County Courtyard, Ivory County and Cocoa County, the group&apos;s ultra-luxury development in Sector 88A, Gurgaon, spread across approximately 24 acres with 844 residences across 9 towers.
-          </p>
-          <p>
-            Guided by the philosophy &ldquo;It&apos;s All About U,&rdquo; County Group&apos;s projects are built around landscaped courtyards, clubhouse-led amenities, and a focus on quality, timely delivery and transparency.
-          </p>
+         
         </div>
         
         {/* RERA Block */}

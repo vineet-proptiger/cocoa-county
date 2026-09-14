@@ -120,14 +120,14 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
       <div 
         className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" 
         style={{ 
-          background: isTransparent ? 'rgba(255, 255, 255, 0.12)' : 'var(--color-gold-bg)',
-          border: isTransparent ? '2px solid #ffffff' : 'none',
-          boxShadow: isTransparent ? '0 0 20px rgba(255, 255, 255, 0.2)' : 'none'
+          background: isTransparent ? 'rgba(184, 138, 68, 0.15)' : 'var(--color-gold-bg)',
+          border: isTransparent ? '2px solid #B88A44' : 'none',
+          boxShadow: isTransparent ? '0 0 20px rgba(184, 138, 68, 0.3)' : 'none'
         }}
       >
         <svg 
           className="w-8 h-8" 
-          style={{ color: isTransparent ? '#ffffff' : 'var(--color-gold-dark)' }} 
+          style={{ color: isTransparent ? '#B88A44' : 'var(--color-gold-dark)' }} 
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24"
@@ -141,10 +141,10 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
   )
 
   const dynamicInputClass = isTransparent 
-    ? "w-full mb-3 px-4 py-2.5 bg-[#07172B]/60 text-white placeholder-gray-400 outline-none transition-all border rounded-lg focus:border-white focus:ring-1 focus:ring-white/40 focus:bg-[#07172B]/90 shadow-inner"
+    ? "w-full mb-3 px-4 py-2.5 bg-[#180C06]/70 text-white placeholder-gray-300 outline-none transition-all border rounded-lg focus:border-[#B88A44] focus:ring-1 focus:ring-[#B88A44]/50 focus:bg-[#180C06]/90 shadow-inner"
     : "w-full mb-3 px-4 py-2 bg-white text-gray-900 placeholder-gray-400 outline-none transition-colors border rounded-md shadow-sm focus:border-[var(--color-gold)]";
 
-  const dynamicInputStyle = isTransparent ? { fontFamily: F_SANS, borderColor: '#ffffff' } : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
+  const dynamicInputStyle = isTransparent ? { fontFamily: F_SANS, borderColor: 'rgba(184, 138, 68, 0.45)' } : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-1 w-full">
