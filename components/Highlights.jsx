@@ -1,40 +1,35 @@
 'use client'
 import React from 'react'
-import { TreePine, Crown, Building2, MapPin, Award, Sparkles } from 'lucide-react'
+import { MapPin, Crown, TreePine, Sparkles, TrendingUp } from 'lucide-react'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const highlightsData = [
   {
-    icon: TreePine,
-    title: '~24 Acres Grand Parcel',
-    desc: 'Sprawling master-planned luxury development in Sector 88A, Gurugram',
+    icon: MapPin,
+    title: 'Prime Strategic Location',
+    desc: 'Situated in Sector 88A along Dwarka Expressway with quick access to IGI Airport, Delhi & Cyber Hub.',
   },
   {
     icon: Crown,
-    title: 'Luxury 3 & 4 BHK',
-    desc: 'Thoughtfully crafted palatial residences with expansive private balconies',
+    title: 'Ultra-Luxury Residences',
+    desc: 'Thoughtfully crafted 3, 4 & 4.5 BHK luxury homes with expansive layouts, high ceilings & premium fittings.',
   },
   {
-    icon: Building2,
-    title: '9 Signature Towers',
-    desc: 'Low-density living with 844 total residences including 3 Gold Segment towers',
-  },
-  {
-    icon: MapPin,
-    title: 'Dwarka Expressway',
-    desc: 'Direct connectivity to IGI Airport (30 mins), Yashobhoomi & Rajiv Chowk',
-  },
-  {
-    icon: Award,
-    title: 'County Group Pedigree',
-    desc: 'From the makers of iconic landmarks like Cleo County, Ivory County & County 107',
+    icon: TreePine,
+    title: 'Low-Density Green Living',
+    desc: 'Designed with low-density planning, sprawling landscaped gardens, and abundant open spaces.',
   },
   {
     icon: Sparkles,
-    title: 'Clubhouse & Courtyards',
-    desc: 'World-class clubhouse-led amenities, landscaped courtyards & curated greens',
+    title: 'World-Class Lifestyle Amenities',
+    desc: 'Grand clubhouse, infinity swimming pool, wellness spa, sports courts, and 24/7 security.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'High Growth & Investment Value',
+    desc: "Developed by County Group in one of Gurugram's fastest-growing real estate corridors.",
   },
 ]
 
@@ -65,8 +60,8 @@ const Highlights = ({ setIsOpen }) => {
           <div className="w-16 h-[1.5px] bg-[#B88A44]"></div>
         </div>
         
-        {/* 6 Highlights Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 5 Highlights Cards */}
+        <div className="flex flex-wrap justify-center gap-6">
           {highlightsData.map((item, idx) => {
             const IconComponent = item.icon
             return (
@@ -75,7 +70,7 @@ const Highlights = ({ setIsOpen }) => {
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay={idx * 100}
-                className="group p-7 rounded-2xl bg-white/95 backdrop-blur-sm border border-[#E8DEC8] shadow-[0_8px_24px_rgba(0,0,0,0.15)] hover:shadow-[0_16px_36px_rgba(65,32,17,0.22)] hover:border-[#B88A44] transform transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center cursor-default"
+                className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group p-7 rounded-2xl bg-white/95 backdrop-blur-sm border border-[#E8DEC8] shadow-[0_8px_24px_rgba(0,0,0,0.15)] hover:shadow-[0_16px_36px_rgba(65,32,17,0.22)] hover:border-[#B88A44] transform transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center cursor-default"
               >
                 {/* Modern Icon Badge */}
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-[#FAF3E8] to-[#F5EADB] border border-[#E8DEC8] flex items-center justify-center text-[#B88A44] mb-5 shadow-xs group-hover:scale-110 group-hover:bg-[#412011] group-hover:text-[#B88A44] group-hover:border-[#B88A44] transition-all duration-300">
