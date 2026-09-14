@@ -99,27 +99,30 @@ const Overview = ({ setIsOpen }) => {
             </div>
 
             {/* Info Boxes inside the background container */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 sm:mt-8 pt-6 border-t border-[#B88A44]/30">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-6 sm:mt-8 pt-6 border-t border-[#B88A44]/30">
               
               {/* Box 1: Total Project Area */}
-              <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3.5 p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 text-[#B88A44]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 21c-4.97-4.97-8-8.58-8-12a8 8 0 1 1 16 0c0 3.42-3.03 7.03-8 12z" />
                     <circle cx="12" cy="9" r="3" />
                   </svg>
                 </div>
-                <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">~24</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[20px] font-bold text-[#412011] leading-tight uppercase block">ACRES</span>
-                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOTAL<br/>PROJECT AREA</span>
+                <div className="flex flex-col justify-center min-w-0">
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[19px] sm:text-[21px] font-bold text-[#412011] leading-tight uppercase">
+                    ~24 Acres
+                  </span>
+                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">
+                    Total Project Area
+                  </span>
                 </div>
               </div>
 
               {/* Box 2: Towers */}
-              <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3.5 p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 text-[#B88A44]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16" />
                     <path d="M9 8h2" />
                     <path d="M13 8h2" />
@@ -128,30 +131,35 @@ const Overview = ({ setIsOpen }) => {
                     <path d="M10 21v-4a2 2 0 0 1 4 0v4" />
                   </svg>
                 </div>
-                <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">9</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[15px] sm:text-[18px] font-bold text-[#412011] leading-tight uppercase block">TOWERS<br/>(3 GOLD)</span>
-                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOWERS</span>
+                <div className="flex flex-col justify-center min-w-0">
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[19px] sm:text-[21px] font-bold text-[#412011] leading-tight uppercase">
+                    9 Towers
+                  </span>
+                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">
+                    3 Gold Segment
+                  </span>
                 </div>
               </div>
 
               {/* Box 3: Residences */}
-              <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3.5 p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-8 h-8 text-[#B88A44]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                     <polyline points="9 22 9 12 15 12 15 22" />
                   </svg>
                 </div>
-                <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">844</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[19px] font-bold text-[#412011] leading-tight uppercase block">APARTMENTS</span>
-                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOTAL RESIDENCES</span>
+                <div className="flex flex-col justify-center min-w-0">
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[19px] sm:text-[21px] font-bold text-[#412011] leading-tight uppercase">
+                    844 Apartments
+                  </span>
+                  <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-0.5 uppercase tracking-wide">
+                    Total Residences
+                  </span>
                 </div>
               </div>
 
-
-              </div>
+            </div>
           </div>
         </div>
 
