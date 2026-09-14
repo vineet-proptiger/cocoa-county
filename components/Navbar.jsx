@@ -237,7 +237,7 @@ const Navbar = ({ setIsOpen }) => {
         }
         
         .header_style2 .nav-wing li a:hover {
-          color: #004B87 !important;
+          color: #412011 !important;
         }
 
         /* Phone Button styling in Nav */
@@ -544,7 +544,7 @@ const Navbar = ({ setIsOpen }) => {
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
-            color: #111;
+            color: #412011;
             width: 44px;
             height: 44px;
             display: flex;
@@ -559,7 +559,7 @@ const Navbar = ({ setIsOpen }) => {
           
           .header_style2.sticky .mob_nav_trigger,
           .header_style2.scrolled-up-expanded .mob_nav_trigger {
-            background: #004B87;
+            background: #B88A44;
             color: #ffffff;
           }
         }
@@ -633,7 +633,7 @@ const Navbar = ({ setIsOpen }) => {
           transition: color 0.3s;
         }
         .popup_menu ul li a:hover {
-          color: #004B87;
+          color: #B88A44;
         }
       `}} />
 
@@ -691,7 +691,7 @@ const Navbar = ({ setIsOpen }) => {
             <li><a href="#masterplan" onClick={() => setMobileOpen(false)}>Floor Plan</a></li>
             <li><a href="#location" onClick={() => setMobileOpen(false)}>Location</a></li>
             <li style={{ marginTop: '40px' }}>
-              <a href="tel:9718344024" style={{ color: '#004B87', fontSize: '20px' }}>
+              <a href="tel:9718344024" style={{ color: '#B88A44', fontSize: '20px' }}>
                 <Phone size={20} style={{ display: 'inline', marginRight: '8px' }}/> 9718344024
               </a>
             </li>

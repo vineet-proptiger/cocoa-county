@@ -82,10 +82,10 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 <span className="text-[15px] mr-1.5">💳</span>Priority Allotment EOI Amount
               </div>
               <div className="flex flex-col items-center gap-1.5 w-full">
-                <span className="text-[#004B87] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
+                <span className="text-[#B88A44] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
                   <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">2 & 4 BHK:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹3 Lakhs*</span>
                 </span>
-                <span className="text-[#004B87] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
+                <span className="text-[#B88A44] font-bold text-[16px] tracking-wider" style={{ fontFamily: F_JOST }}>
                   <span className="text-white/90 font-normal text-[12px] tracking-normal mr-1">Jodi Residences:</span> <span style={{ animation: 'popupBlink 1.4s infinite' }}>₹5 Lakhs*</span>
                 </span>
               </div>

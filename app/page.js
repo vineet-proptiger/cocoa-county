@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Floating Vertical Enquire Tab — Desktop only */}
       <div 
-        className="hidden lg:flex fixed z-50 cursor-pointer text-white uppercase text-[14px] leading-[20px] font-bold tracking-[0.4px] whitespace-nowrap bg-[#004B87] items-center justify-center gap-[6px] hover:bg-[#006BC0] hover:text-white transition-colors duration-300"
+        className="hidden lg:flex fixed z-50 cursor-pointer text-white uppercase text-[14px] leading-[20px] font-bold tracking-[0.4px] whitespace-nowrap bg-[#B88A44] items-center justify-center gap-[6px] hover:bg-[#946B2D] hover:text-white transition-colors duration-300"
         style={{
           top: '50%',
           right: '10px',

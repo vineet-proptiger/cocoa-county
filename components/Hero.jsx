@@ -120,7 +120,7 @@ const Hero = ({ setIsOpen }) => {
         @keyframes heroPriceBadgeBlink {
           0%, 75% { 
             opacity: 1; 
-            box-shadow: 0 0 16px rgba(0, 107, 192, 0.6), inset 0 0 8px rgba(0, 107, 192, 0.3);
+            box-shadow: 0 0 16px rgba(184, 138, 68, 0.6), inset 0 0 8px rgba(184, 138, 68, 0.3);
           }
           76%, 100% { 
             opacity: 0; 
@@ -135,10 +135,10 @@ const Hero = ({ setIsOpen }) => {
           gap: 12px;
           vertical-align: middle;
           padding: 6px 22px 6px 16px;
-          background: radial-gradient(130% 130% at 50% 30%, #004B87 0%, #002D59 65%, #051426 100%);
-          border: 1.5px solid #38BDF8;
+          background: radial-gradient(130% 130% at 50% 30%, #412011 0%, #2A160C 65%, #180C06 100%);
+          border: 1.5px solid #B88A44;
           border-radius: 9999px;
-          box-shadow: 0 0 16px rgba(0, 107, 192, 0.6), inset 0 0 8px rgba(0, 107, 192, 0.3);
+          box-shadow: 0 0 16px rgba(184, 138, 68, 0.6), inset 0 0 8px rgba(184, 138, 68, 0.3);
           animation: heroPriceBadgeBlink 1.4s infinite;
           backdrop-filter: blur(8px);
           -webkit-backdrop-filter: blur(8px);
@@ -150,7 +150,7 @@ const Hero = ({ setIsOpen }) => {
           object-fit: contain;
           flex-shrink: 0;
           display: inline-block;
-          filter: hue-rotate(110deg) brightness(1.25) drop-shadow(0 0 4px rgba(56, 189, 248, 0.7));
+          filter: brightness(1.2) drop-shadow(0 0 4px rgba(184, 138, 68, 0.8));
         }
 
         .hero-price-amt {
@@ -428,9 +428,9 @@ const Hero = ({ setIsOpen }) => {
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            background: #EDF4FA;
-            color: #004B87;
-            border: 1px solid #B8D3EB;
+            background: #FAF3E8;
+            color: #B88A44;
+            border: 1px solid #E8DEC8;
             box-shadow: 0 2px 6px rgba(0, 75, 135, 0.12);
             margin-bottom: 10px;
             width: fit-content;
@@ -454,7 +454,7 @@ const Hero = ({ setIsOpen }) => {
           .hero-title {
             font-size: clamp(21px, 5.8vw, 23px) !important;
             font-weight: 800 !important;
-            color: #0B1E36 !important;
+            color: #412011 !important;
             text-shadow: none !important;
             margin: 0 0 4px !important;
             line-height: 1.2 !important;
@@ -462,13 +462,13 @@ const Hero = ({ setIsOpen }) => {
           .hero-subtitle {
             font-size: 13.5px !important;
             font-weight: 600 !important;
-            color: #004B87 !important;
+            color: #B88A44 !important;
             text-shadow: none !important;
             margin: 0 0 16px !important;
             line-height: 1.4 !important;
           }
           .hero-subtitle span {
-            color: #004B87 !important;
+            color: #B88A44 !important;
             opacity: 1 !important;
           }
           /* 2x2 Feature Micro-Cards */
@@ -485,8 +485,8 @@ const Hero = ({ setIsOpen }) => {
             align-items: center !important;
             gap: 8px !important;
             padding: 10px 10px !important;
-            background: #F4F8FC !important;
-            border: 1px solid #D0E3F7 !important;
+            background: #FDFBF7 !important;
+            border: 1px solid #E8DEC8 !important;
             border-radius: 14px !important;
             box-shadow: 0 2px 6px rgba(11, 30, 54, 0.04) !important;
             width: 100% !important;
@@ -498,23 +498,23 @@ const Hero = ({ setIsOpen }) => {
             width: 18px !important;
             height: 18px !important;
             background-color: #ffffff !important;
-            border: 1.5px solid #004B87 !important;
+            border: 1.5px solid #B88A44 !important;
             border-radius: 50% !important;
             padding: 2.5px !important;
             flex-shrink: 0 !important;
-            stroke: #004B87 !important;
+            stroke: #B88A44 !important;
           }
           .hero-bullet-text {
             font-size: 12px !important;
             font-weight: 600 !important;
-            color: #0B1E36 !important;
+            color: #412011 !important;
             line-height: 1.35 !important;
             text-shadow: none !important;
           }
           /* Price Card Container */
           .hero-price-line {
-            background: linear-gradient(135deg, #F8FAFD 0%, #EDF4FA 100%) !important;
-            border: 1.5px dashed #004B87 !important;
+            background: linear-gradient(135deg, #FDFBF7 0%, #FAF3E8 100%) !important;
+            border: 1.5px dashed #B88A44 !important;
             border-radius: 18px !important;
             padding: 12px 14px !important;
             margin: 0 0 16px !important;
@@ -572,14 +572,14 @@ const Hero = ({ setIsOpen }) => {
             gap: 8px !important;
           }
           .hero-cta-row .hero-btn-one {
-            color: #0B1E36 !important;
-            border: 1.5px solid #0B1E36 !important;
+            color: #412011 !important;
+            border: 1.5px solid #412011 !important;
             background: #ffffff !important;
             box-shadow: 0 2px 6px rgba(0,0,0,0.04) !important;
           }
           .hero-cta-row > a.btn-brand,
           .hero-cta-row > button.btn-brand {
-            background: linear-gradient(135deg, #004B87 0%, #003366 100%) !important;
+            background: linear-gradient(135deg, #B88A44 0%, #946B2D 100%) !important;
             color: #ffffff !important;
             border: none !important;
             box-shadow: 0 4px 14px rgba(0, 75, 135, 0.35) !important;
@@ -669,7 +669,7 @@ const Hero = ({ setIsOpen }) => {
               gap: '10px'
             }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #004B87)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #B88A44)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
               <polyline points="20 6 9 17 4 12" />
             </svg>
             <span className="hero-bullet-text" style={{ fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 17px)', fontWeight: '500', letterSpacing: '0.02em' }}>
@@ -685,7 +685,7 @@ const Hero = ({ setIsOpen }) => {
           <div className="text-white font-medium text-[13px] sm:text-[15px] tracking-wide flex flex-wrap items-center gap-x-1" style={{ fontFamily: 'var(--font-jost), Montserrat, sans-serif' }}>
             <span>Priority Allotment EOI Amount:</span>
             <span style={{ animation: 'heroPriceBlink 1.4s infinite' }} className="flex items-center gap-1 mt-0.5 sm:mt-0">
-              <strong className="text-[#004B87] whitespace-nowrap">₹3 Lakhs</strong>
+              <strong className="text-[#412011] whitespace-nowrap">₹3 Lakhs</strong>
               <span className="text-white/90 font-normal text-[11px] sm:text-[13px] whitespace-nowrap">(3 & 4 BHK)</span>
             </span>
           </div>

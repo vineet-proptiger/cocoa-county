@@ -16,7 +16,7 @@ const Overview = ({ setIsOpen }) => {
         box-sizing: border-box;
         padding: 70px 0px;
         position: relative;
-        background: #F8F9FA;
+        background: #FDFBF7;
         overflow: hidden;
       }
       .inner-section {
@@ -44,9 +44,9 @@ const Overview = ({ setIsOpen }) => {
         <h2 className="text-[22px] sm:text-[28px] md:text-[36px] font-semibold leading-tight uppercase tracking-wider text-gray-900" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", marginBottom: '6px' }}>Cocoa County</h2>
         {/* Decorative Line */}
         <div className="flex items-center justify-start mt-1 mb-3">
-          <div className="w-16 h-[1px] bg-[#004B87]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#004B87] mx-3"></div>
-          <div className="w-16 h-[1px] bg-[#004B87]"></div>
+          <div className="w-16 h-[1px] bg-[#B88A44]"></div>
+          <div className="w-2 h-2 rounded-full bg-[#B88A44] mx-3"></div>
+          <div className="w-16 h-[1px] bg-[#B88A44]"></div>
         </div>
         <h3 className="text-[16px] sm:text-[18px] md:text-[22px] font-medium tracking-wide text-gray-600" style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }}>Premium Residences in Sector 88A, Gurugram</h3>
       </div>
@@ -57,7 +57,7 @@ const Overview = ({ setIsOpen }) => {
         <div className="w-full lg:w-7/12 flex flex-col" data-aos="fade-up" data-aos-duration="1000">
           <div 
             className="relative p-6 sm:p-8 rounded-2xl shadow-[0_12px_36px_rgba(11, 30, 54,0.18)] overflow-hidden flex-1 flex flex-col justify-between" 
-            style={{ background: '#0B1E36' }}
+            style={{ background: '#412011' }}
           >
             <div>
               <p style={{ fontSize: '15.5px', fontFamily: '"Poppins", sans-serif', color: '#E5EDDC', textAlign: 'justify', lineHeight: '1.85', margin: 0 }}>
@@ -68,7 +68,7 @@ const Overview = ({ setIsOpen }) => {
                     fontSize: '3.6rem', 
                     lineHeight: '0.8', 
                     fontWeight: '800', 
-                    color: '#C5A059', 
+                    color: '#B88A44', 
                     marginRight: '12px', 
                     marginTop: '4px',
                     fontFamily: "var(--font-jost), Montserrat, sans-serif" 
@@ -87,7 +87,7 @@ const Overview = ({ setIsOpen }) => {
                 <button 
                   onClick={() => setIsExpanded(!isExpanded)}
                   type="button"
-                  className="text-[#C5A059] hover:text-[#E0BA6A] font-bold inline-flex items-center gap-1 transition-colors cursor-pointer ml-1 select-none focus:outline-none"
+                  className="text-[#B88A44] hover:text-[#D4A762] font-bold inline-flex items-center gap-1 transition-colors cursor-pointer ml-1 select-none focus:outline-none"
                   style={{ fontSize: '15px' }}
                 >
                   <span>{isExpanded ? 'Read Less' : 'Read More'}</span>
@@ -99,19 +99,19 @@ const Overview = ({ setIsOpen }) => {
             </div>
 
             {/* Info Boxes inside the background container */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 sm:mt-8 pt-6 border-t border-[#C5A059]/20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 sm:mt-8 pt-6 border-t border-[#B88A44]/30">
               
               {/* Box 1: Total Project Area */}
               <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#004B87]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 21c-4.97-4.97-8-8.58-8-12a8 8 0 1 1 16 0c0 3.42-3.03 7.03-8 12z" />
                     <circle cx="12" cy="9" r="3" />
                   </svg>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#004B87] leading-tight uppercase block">~24</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[20px] font-bold text-[#004B87] leading-tight uppercase block">ACRES</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">~24</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[20px] font-bold text-[#412011] leading-tight uppercase block">ACRES</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOTAL<br/>PROJECT AREA</span>
                 </div>
               </div>
@@ -119,7 +119,7 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 2: Towers */}
               <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#004B87]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16" />
                     <path d="M9 8h2" />
                     <path d="M13 8h2" />
@@ -129,8 +129,8 @@ const Overview = ({ setIsOpen }) => {
                   </svg>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#004B87] leading-tight uppercase block">9</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[15px] sm:text-[18px] font-bold text-[#004B87] leading-tight uppercase block">TOWERS<br/>(3 GOLD)</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">9</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[15px] sm:text-[18px] font-bold text-[#412011] leading-tight uppercase block">TOWERS<br/>(3 GOLD)</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOWERS</span>
                 </div>
               </div>
@@ -138,14 +138,14 @@ const Overview = ({ setIsOpen }) => {
               {/* Box 3: Residences */}
               <div className="flex items-center gap-2 p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0">
-                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#004B87]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-7 h-7 sm:w-8 sm:h-8 text-[#412011]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                     <polyline points="9 22 9 12 15 12 15 22" />
                   </svg>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#004B87] leading-tight uppercase block">844</span>
-                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[19px] font-bold text-[#004B87] leading-tight uppercase block">APARTMENTS</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[18px] sm:text-[22px] font-bold text-[#412011] leading-tight uppercase block">844</span>
+                  <span style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif" }} className="text-[16px] sm:text-[19px] font-bold text-[#412011] leading-tight uppercase block">APARTMENTS</span>
                   <span style={{ fontFamily: "var(--font-sans), Open Sans, sans-serif" }} className="text-[11px] sm:text-[12px] text-gray-500 font-bold leading-normal mt-1 uppercase tracking-wide block">TOTAL RESIDENCES</span>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Overview = ({ setIsOpen }) => {
 
         {/* Right Side: Image starting at the exact same height */}
         <div className="w-full lg:w-5/12 flex flex-col" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          <div className="image_caption_wrap relative overflow-hidden rounded-2xl shadow-lg border border-[#004B87]/20 bg-white flex-1 min-h-[380px] sm:min-h-[480px]">
+          <div className="image_caption_wrap relative overflow-hidden rounded-2xl shadow-lg border border-[#B88A44]/30 bg-white flex-1 min-h-[380px] sm:min-h-[480px]">
             <Image
               src={overviewImage}
               alt="Cocoa County - Tower Elevation"

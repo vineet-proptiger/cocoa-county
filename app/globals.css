@@ -18,52 +18,52 @@
    ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Brand Leaf Green Theme (Purva Logo) ── */
-  --color-gold: #004B87;        
-  --color-gold-light: #006BC0;
-  --color-gold-dark: #003366;
-  --color-gold-bg: rgba(0, 75, 135, 0.1);     
+  --color-gold: #B88A44;        
+  --color-gold-light: #D4A762;
+  --color-gold-dark: #946B2D;
+  --color-gold-bg: rgba(184, 138, 68, 0.12);     
 
   /* ── Brand Primary (Deep Nature Green) ── */
-  --color-brand: #004B87;
-  --color-brand-hover: #003366;
-  --color-brand-light: rgba(0, 75, 135, 0.08);
+  --color-brand: #B88A44;
+  --color-brand-hover: #946B2D;
+  --color-brand-light: rgba(184, 138, 68, 0.1);
 
   /* ── Text (nav links, headings) ── */
-  --color-nav-text: #111111;
-  --color-heading-brown: #004B87;
+  --color-nav-text: #412011;
+  --color-heading-brown: #412011;
 
   /* ── Section Backgrounds ── */
-  --color-cream-bg: #F5F8FC;
-  --color-border-gold: #004B87;
+  --color-cream-bg: #FDFBF7;
+  --color-border-gold: #B88A44;
 
   /* ── Charcoal Gray Primary Palette ── */
-  --color-primary: #526057;
-  --color-primary-light: #728278;
-  --color-primary-dark: #323D36;
+  --color-primary: #412011;
+  --color-primary-light: #6A3821;
+  --color-primary-dark: #2A160C;
 
-  --color-dark: #111111;
-  --color-dark-mid: #222B26;
+  --color-dark: #2A160C;
+  --color-dark-mid: #412011;
 
   /* ── Background Palette ── */
   --color-bg: #ffffff;
   --color-bg-light: #ffffff;
-  --color-bg-muted: #F5F8FC;
+  --color-bg-muted: #FDFBF7;
 
   /* ── Text Palette ── */
-  --color-text: #222B26;
-  --color-text-mid: #505F56;
-  --color-text-light: #7E8E84;
+  --color-text: #2A160C;
+  --color-text-mid: #333333;
+  --color-text-light: #666666;
 
   /* ── UI ── */
   --btn-radius: 6px;
   --btn-radius-pill: 50px;
 
   /* ── Shadows ── */
-  --shadow-sm: 0 2px 8px rgba(0, 75, 135, 0.10);
-  --shadow-md: 0 8px 24px rgba(0, 75, 135, 0.16);
-  --shadow-lg: 0 20px 48px rgba(0, 75, 135, 0.20);
+  --shadow-sm: 0 2px 8px rgba(65, 32, 17, 0.10);
+  --shadow-md: 0 8px 24px rgba(65, 32, 17, 0.16);
+  --shadow-lg: 0 20px 48px rgba(65, 32, 17, 0.20);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
-  --color-shadow-inner: rgba(0, 75, 135, 0.10);
+  --color-shadow-inner: rgba(65, 32, 17, 0.10);
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────── */
@@ -110,11 +110,11 @@
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 75, 135, 0.5);
+    box-shadow: 0 0 0 0 rgba(65, 32, 17, 0.5);
   }
 
   50% {
-    box-shadow: 0 0 0 10px rgba(0, 75, 135, 0);
+    box-shadow: 0 0 0 10px rgba(65, 32, 17, 0);
   }
 }
 
@@ -144,11 +144,11 @@
 
   0%,
   100% {
-    border-color: rgba(0, 75, 135, 0.4);
+    border-color: rgba(65, 32, 17, 0.4);
   }
 
   50% {
-    border-color: rgba(0, 75, 135, 1);
+    border-color: rgba(65, 32, 17, 1);
   }
 }
 
@@ -265,6 +265,7 @@
     font-family: var(--font-jost), 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: -0.01em;
+    color: #412011;
   }
 
   img {
@@ -301,8 +302,8 @@
 
   /* ── Theme selection ── */
   ::selection {
-    background: rgba(0, 75, 135, 0.15);
-    color: var(--color-gold-dark);
+    background: rgba(65, 32, 17, 0.15);
+    color: #412011;
   }
 }
 
@@ -328,7 +329,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(0, 75, 135, 0.35);
+    box-shadow: 0 4px 14px rgba(65, 32, 17, 0.35);
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -355,12 +356,12 @@
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 75, 135, 0.30);
+    box-shadow: 0 12px 28px rgba(65, 32, 17, 0.30);
   }
 
   .btn-gold:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(0, 75, 135, 0.20);
+    box-shadow: 0 4px 10px rgba(65, 32, 17, 0.20);
   }
 
   /* ══ OUTLINED RED BUTTON ══ */
@@ -390,7 +391,7 @@
     background: var(--color-gold) !important;
     color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 75, 135, 0.30);
+    box-shadow: 0 12px 28px rgba(65, 32, 17, 0.30);
   }
 
   /* ══ DARK PRIMARY BUTTON (Now Gold Theme) ══ */
@@ -412,7 +413,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(0, 75, 135, 0.35);
+    box-shadow: 0 4px 14px rgba(65, 32, 17, 0.35);
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -422,12 +423,12 @@
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 75, 135, 0.30);
+    box-shadow: 0 12px 28px rgba(65, 32, 17, 0.30);
   }
 
   .btn-primary:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(0, 75, 135, 0.20);
+    box-shadow: 0 4px 10px rgba(65, 32, 17, 0.20);
   }
 
   /* ══ BRAND BUTTON (Luxury Villas style) ══ */
@@ -472,7 +473,7 @@
     letter-spacing: 0.12em;
     font-weight: 700;
     box-shadow: none !important;
-    filter: drop-shadow(-4px 0 14px rgba(0, 75, 135, 0.28));
+    filter: drop-shadow(-4px 0 14px rgba(65, 32, 17, 0.28));
     border: 2px solid var(--color-brand) !important;
     transition: all 0.3s ease !important;
   }
@@ -514,18 +515,18 @@
 
   /* ══ GLOBAL BUTTON OVERRIDE (Purva Nature & Leaf Green) ══ */
   .btn-gold, .btn-gold-outline, .btn-primary, .btn-brand {
-    background: #004B87 !important;
+    background: #B88A44 !important;
     color: #ffffff !important;
-    border-color: #004B87 !important;
+    border-color: #B88A44 !important;
     font-weight: 800 !important;
     cursor: pointer !important;
     transition: all 0.3s ease !important;
   }
 
   .btn-gold:hover, .btn-gold-outline:hover, .btn-primary:hover, .btn-brand:hover {
-    background: #004B87 !important;
+    background: #B88A44 !important;
     color: #ffffff !important;
-    border-color: #004B87 !important;
+    border-color: #B88A44 !important;
     cursor: pointer !important;
   }
 
@@ -565,7 +566,7 @@
 
   .form-input:focus {
     border-color: var(--color-gold);
-    box-shadow: 0 0 0 3px rgba(0, 75, 135, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 3px rgba(65, 32, 17, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
   }
 
   .form-input::placeholder {
@@ -620,7 +621,7 @@
   .pricing-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(0, 75, 135, 0.25);
+    border-color: rgba(65, 32, 17, 0.25);
   }
 
   .pricing-card:hover::after {
@@ -643,7 +644,7 @@
 
   .highlight-card:hover {
     border-color: var(--color-gold);
-    box-shadow: 0 8px 28px rgba(0, 75, 135, 0.15);
+    box-shadow: 0 8px 28px rgba(65, 32, 17, 0.15);
     transform: translateY(-4px);
   }
 
@@ -665,7 +666,7 @@
     border-color: var(--color-gold);
     background: var(--color-gold-bg);
     color: var(--color-gold);
-    box-shadow: 0 0 0 6px rgba(0, 75, 135, 0.08);
+    box-shadow: 0 0 0 6px rgba(65, 32, 17, 0.08);
   }
 
   /* ══ SECTION WRAPPER — white card on diamond bg ══ */
@@ -698,15 +699,15 @@
   /* Convert box-shadow to filter drop-shadow because mask clips box-shadow */
   .btn-gold, .btn-primary {
     box-shadow: none !important;
-    filter: drop-shadow(0 4px 10px rgba(0, 75, 135, 0.35));
+    filter: drop-shadow(0 4px 10px rgba(65, 32, 17, 0.35));
   }
   .btn-gold:hover, .btn-primary:hover, .btn-gold-outline:hover {
     box-shadow: none !important;
-    filter: drop-shadow(0 8px 20px rgba(0, 75, 135, 0.30));
+    filter: drop-shadow(0 8px 20px rgba(65, 32, 17, 0.30));
   }
   .btn-gold:active, .btn-primary:active {
     box-shadow: none !important;
-    filter: drop-shadow(0 2px 6px rgba(0, 75, 135, 0.20));
+    filter: drop-shadow(0 2px 6px rgba(65, 32, 17, 0.20));
   }
 }
 
@@ -731,7 +732,7 @@
   right: 0;
   z-index: 999;
   display: flex;
-  box-shadow: 0 -4px 20px rgba(0, 75, 135, 0.18);
+  box-shadow: 0 -4px 20px rgba(65, 32, 17, 0.18);
 }
 
 @media (min-width: 1024px) {
@@ -745,12 +746,12 @@ nav.fixed {
   background: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 75, 135, 0.08);
+  border-bottom: 1px solid rgba(65, 32, 17, 0.08);
 }
 
 /* ─── Teal-Cyan focus ring globally ─────────────────────────────────── */
 *:focus-visible {
-  outline: 2px solid rgba(0, 75, 135, 0.5);
+  outline: 2px solid rgba(65, 32, 17, 0.5);
   outline-offset: 3px;
   border-radius: 4px;
 }

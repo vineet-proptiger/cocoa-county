@@ -7,7 +7,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 const Footer = () => (
-  <footer className="relative bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/footer/footer.webp')", color: '#fff' }}>
+  <footer className="relative bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/footer/footer.webp')", backgroundColor: '#412011', color: '#fff' }}>
     {/* Removed blue overlay as requested */}
 
     <div className="relative z-10">
@@ -23,17 +23,28 @@ const Footer = () => (
           Landmark Integrated Development — Sector 88A, Dwarka Expressway, Gurgaon
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
-          <span style={{ width: '36px', height: '2.5px', background: 'rgba(255, 255, 255, 0.75)', borderRadius: '2px' }} />
+          <span style={{ width: '36px', height: '2.5px', background: '#B88A44', borderRadius: '2px' }} />
         </div>
-        <p style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
+        <div style={{ fontSize: '15px', color: '#fff', fontFamily: 'var(--font-poppins), sans-serif', lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
           data-aos="fade-in" data-aos-delay="100">
-          County Group Established in 1975 , a renowned name in real estate industry known for its unwavering commitment to quality and innovation shaping the landscape of urban living. With a diverse portfolio spanning residential, commercial, retail, and hospitality sectors, County Group has left an indelible mark in key cities like Bangalore, Chennai, Hyderabad, Pune, and Gurgaon. Their projects not only showcase architectural brilliance but also prioritize sustainability, reflecting the group’s dedication to environmentally conscious development.
-        </p>
+          <p className="mb-2">
+            County Group is a real estate developer in the National Capital Region, with a portfolio of legacy and ongoing residential and commercial projects across Noida, Ghaziabad, Delhi and now Gurgaon.
+          </p>
+          <p className="mb-2">
+            The group&apos;s legacy developments include Orange County, Olive County, Cherry County, the IGBC Gold-certified Cleo County, Coco County and County 107 — together accounting for over 159 lakh sq. ft. of developed area.
+          </p>
+          <p className="mb-2">
+            Its ongoing portfolio includes Ivy County, County Courtyard, Ivory County and Cocoa County, the group&apos;s ultra-luxury development in Sector 88A, Gurgaon, spread across approximately 24 acres with 844 residences across 9 towers.
+          </p>
+          <p>
+            Guided by the philosophy &ldquo;It&apos;s All About U,&rdquo; County Group&apos;s projects are built around landscaped courtyards, clubhouse-led amenities, and a focus on quality, timely delivery and transparency.
+          </p>
+        </div>
         
         {/* RERA Block */}
         <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.05)', padding: '10px 24px', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
           <span style={{ fontFamily: F_SANS, fontSize: '14px', color: '#aaa' }}>RERA No :</span>
-          <strong style={{ fontFamily: F_JOST, fontSize: '15px', color: '#fff', letterSpacing: '0.04em' }}>PM1180002502319</strong>
+          <strong style={{ fontFamily: F_JOST, fontSize: '15px', color: '#fff', letterSpacing: '0.04em' }}>Comming Soon</strong>
         </div>
       </div>
 
@@ -44,7 +55,7 @@ const Footer = () => (
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           
           <span style={{ color: '#444' }}>|</span>
-          <Link href="/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
+          <Link href="/privacy-policy" style={{ fontSize: '13px', color: '#B88A44', fontFamily: F_SANS }}>
             Privacy Policy
           </Link>
         </div>
