@@ -144,7 +144,9 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
     ? "w-full mb-3 px-4 py-2.5 bg-[#180C06]/70 text-white placeholder-gray-300 outline-none transition-all border rounded-lg focus:border-[#B88A44] focus:ring-1 focus:ring-[#B88A44]/50 focus:bg-[#180C06]/90 shadow-inner"
     : "w-full mb-3 px-4 py-2 bg-white text-gray-900 placeholder-gray-400 outline-none transition-colors border rounded-md shadow-sm focus:border-[var(--color-gold)]";
 
-  const dynamicInputStyle = isTransparent ? { fontFamily: F_SANS, borderColor: 'rgba(184, 138, 68, 0.45)' } : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
+  const dynamicInputStyle = isTransparent 
+    ? { fontFamily: F_SANS, backgroundColor: '#200E06', borderColor: 'rgba(184, 138, 68, 0.55)', color: '#ffffff' } 
+    : { fontFamily: F_SANS, borderColor: '#e5e7eb' };
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-1 w-full">

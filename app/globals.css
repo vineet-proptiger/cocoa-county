@@ -17,7 +17,7 @@
    THEME VARIABLES — Cocoa County Sector 88A Theme
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Brand Leaf Green Theme (Purva Logo) ── */
+  /* ── Brand Cocoa & Warm Gold Theme ── */
   --color-gold: #B88A44;        
   --color-gold-light: #D4A762;
   --color-gold-dark: #946B2D;
@@ -513,7 +513,7 @@
     cursor: pointer !important;
   }
 
-  /* ══ GLOBAL BUTTON OVERRIDE (Purva Nature & Leaf Green) ══ */
+  /* ══ GLOBAL BUTTON OVERRIDE (Cocoa & Warm Gold) ══ */
   .btn-gold, .btn-gold-outline, .btn-primary, .btn-brand {
     background: #B88A44 !important;
     color: #ffffff !important;

@@ -43,8 +43,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
         className="relative w-full max-w-[92vw] sm:w-[440px] h-auto rounded-3xl flex flex-col justify-center items-center p-8 mx-auto"
         style={{
           background: 'radial-gradient(135% 135% at 50% 20%, #412011 0%, #2A160C 60%, #180C06 100%)',
-          border: '1.5px solid #B88A44',
-          boxShadow: '0 0 50px rgba(184, 138, 68, 0.35), 0 20px 45px rgba(0, 0, 0, 0.7)',
+          border: '2px solid #B88A44',
+          boxShadow: '0 0 50px rgba(184, 138, 68, 0.45), 0 20px 45px rgba(0, 0, 0, 0.8)',
           animation: 'slideInRight 0.45s cubic-bezier(0.22,1,0.36,1) forwards',
         }}
         onClick={(e) => e.stopPropagation()}
