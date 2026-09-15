@@ -37,12 +37,10 @@ export async function POST(request) {
 
     /* ── Required fields ── */
     let phone = get('phone').replace(/\D/g, '')
-    if (phone.length > 10) phone = phone.slice(-10)
-    if (phone.length > 0 && phone.length < 10) {
+    // No slicing or strict 10-digit check here anymore because we have international numbers
+    // Note: The phone number might include the country code now, so it will be 11-15 digits.
+    if (phone.length === 0) {
       return Response.json({ status: false, msg: 'Invalid phone number' })
-    }
-    if (phone.length === 10 && !/^[6-9]\d{9}$/.test(phone)) {
-      return Response.json({ status: false, msg: 'Phone number must start with 6, 7, 8, or 9' })
     }
     const email = get('email')
 

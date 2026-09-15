@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { buildTrackingFields } from '../lib/formMeta'
 
@@ -16,13 +18,19 @@ const ContactCTA = () => {
 
   const handle = (e) => {
     const { name, value } = e.target
-    setForm({ ...form, [name]: name === 'phone' ? value.replace(/\D/g, '') : value })
+    setForm({ ...form, [name]: value })
   }
 
   const submit = async (e) => {
     e.preventDefault()
-    if (form.phone.length !== 10) { setError('Enter valid 10-digit number'); return }
-    if (!/^[6-9]\d{9}$/.test(form.phone)) { setError('Phone number must start with 6, 7, 8, or 9'); return }
+    
+    if (form.phone.length < 10) { setError('Enter a valid mobile number'); return }
+    if (form.phone.startsWith('91') && form.phone.length === 12) {
+      if (!/^[6-9]\d{9}$/.test(form.phone.slice(2))) { setError('Indian number must start with 6, 7, 8, or 9'); return }
+    } else if (form.phone.startsWith('91') && form.phone.length !== 12) {
+      setError('Enter valid 10-digit Indian number'); return
+    }
+
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
 
@@ -65,9 +73,11 @@ const ContactCTA = () => {
       }
     }
 
+    const fullPhone = `+${form.phone}`
+
     const payload = new FormData()
     payload.append('fullname', form.fullname)
-    payload.append('phone', form.phone)
+    payload.append('phone', fullPhone)
     payload.append('email', form.email || '')
     payload.append('projectId', PROJECT_ID)
     payload.append('projectName', PROJECT_NAME)
@@ -107,7 +117,7 @@ const ContactCTA = () => {
           window.dataLayer.push({
             event: 'lead_submit_success', form_name: 'Contact CTA Form',
             user_data: {
-              email: form.email.trim() || undefined, phone: `+91${form.phone}`,
+              email: form.email.trim() || undefined, phone: fullPhone,
               first_name: nameParts[0] || '', last_name: nameParts.slice(1).join(' ') || ''
             }
           })
@@ -172,12 +182,36 @@ const ContactCTA = () => {
                 </div>
 
                 {/* Phone */}
-                <div className="relative">
-                  <span className="absolute left-1 top-2 text-gray-500" style={{ fontFamily: F_SANS }}>+91</span>
-                  <input name="phone" required value={form.phone} onChange={handle}
-                    placeholder="Phone Number" maxLength={10}
-                    className="w-full bg-transparent border-0 border-b border-gray-400 py-2 pl-10 pr-1 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-[#1A2024] transition-colors" 
-                    style={{ fontFamily: F_SANS }} />
+                <div>
+                  <PhoneInput
+                    country={'in'}
+                    value={form.phone}
+                    onChange={(phone) => setForm({ ...form, phone })}
+                    placeholder="Phone Number"
+                    enableSearch={true}
+                    disableSearchIcon={true}
+                    searchPlaceholder="Search country..."
+                    inputStyle={{
+                      width: '100%',
+                      fontFamily: F_SANS
+                    }}
+                    inputClass="w-full bg-transparent border-0 border-b border-gray-400 py-2 !pl-[40px] pr-1 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-[#1A2024] transition-colors"
+                    buttonStyle={{
+                      backgroundColor: 'transparent',
+                      border: 'none',
+                      padding: '0'
+                    }}
+                    dropdownStyle={{
+                      color: '#111',
+                      fontFamily: F_SANS,
+                      width: '300px',
+                      borderRadius: '8px',
+                      boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+                    }}
+                    containerStyle={{
+                      width: '100%'
+                    }}
+                  />
                 </div>
 
                 {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
