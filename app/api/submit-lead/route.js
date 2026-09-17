@@ -1,8 +1,3 @@
-// ═══════════════════════════════════════════════════════════════
-//  SUBMIT LEAD API ROUTE — Next.js
-//  PHP submit-lead.php ka exact replacement
-//  POST /api/submit-lead
-// ═══════════════════════════════════════════════════════════════
 
 /* ─── CONFIG ─────────────────────────────────────────────────── */
 import { SHEET_WEBHOOK, PROPTIGER_URL, CITY_ID, CITY_SLUG } from '../../../lib/config'
@@ -37,7 +32,6 @@ export async function POST(request) {
 
     /* ── Required fields ── */
     let phone = get('phone').replace(/[^\d+]/g, '')
-    // No slicing or strict 10-digit check here anymore because we have international numbers
     // Note: The phone number might include the country code now, so it will be 11-15 digits with a + sign.
     if (phone.length === 0 || phone === '+') {
       return Response.json({ status: false, msg: 'Invalid phone number' })
@@ -89,7 +83,6 @@ export async function POST(request) {
       LastName: lastName,
       Email: email,
       Mobile: phone,
-      Comments: comments,
 
       utm_source: utmSource,
       utm_medium: utmMedium,
@@ -147,7 +140,6 @@ export async function POST(request) {
       gbraid,
       wbraid,
 
-      query: comments || 'Please arrange a callback',
       device: get('device'),
       userIP,
 

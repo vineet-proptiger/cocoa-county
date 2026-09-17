@@ -9,7 +9,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransparent = false }) => {
-  const [formData, setFormData] = useState({ fullname: '', email: '', phone: '' })
+  const [formData, setFormData] = useState({ fullname: '', email: '', phone: '', website: '' })
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
@@ -87,13 +87,13 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
     }
 
     // formData.phone already includes country code from react-phone-input-2
-    // It returns '919876543210'. We can prefix a '+' for proper international formatting in APIs
     const fullPhone = `+${formData.phone}`
 
     const payload = new FormData()
     payload.append('fullname', formData.fullname)
     payload.append('email', formData.email)
     payload.append('phone', fullPhone)
+    payload.append('website', formData.website || '')
     payload.append('projectId', PROJECT_ID)
     payload.append('projectName', PROJECT_NAME)
     payload.append('form_name', formName)
@@ -181,6 +181,18 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
     
   return (
     <form onSubmit={handleSubmit} className="flex flex-col w-full">
+      {/* Honeypot field for bot protection (hidden from humans) */}
+      <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden' }} aria-hidden="true">
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={handleChange}
+        />
+      </div>
+
       <input type="text" name="fullname" required placeholder="First Name" value={formData.fullname} onChange={handleChange}
         className={dynamicInputClass} style={dynamicInputStyle} />
       <input type="email" name="email" placeholder="Email Id (optional)" value={formData.email} onChange={handleChange}

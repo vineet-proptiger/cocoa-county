@@ -11,7 +11,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 const ContactCTA = () => {
-  const [form, setForm] = useState({ fullname: '', phone: '', email: '' })
+  const [form, setForm] = useState({ fullname: '', phone: '', email: '', website: '' })
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState('')
@@ -79,6 +79,7 @@ const ContactCTA = () => {
     payload.append('fullname', form.fullname)
     payload.append('phone', fullPhone)
     payload.append('email', form.email || '')
+    payload.append('website', form.website || '')
     payload.append('projectId', PROJECT_ID)
     payload.append('projectName', PROJECT_NAME)
     payload.append('form_name', 'Contact CTA Form')
@@ -166,6 +167,17 @@ const ContactCTA = () => {
               </div>
             ) : (
               <form onSubmit={submit} className="flex flex-col gap-6">
+                {/* Honeypot field for bot protection (hidden from humans) */}
+                <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0, overflow: 'hidden' }} aria-hidden="true">
+                  <input
+                    type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={form.website}
+                    onChange={handle}
+                  />
+                </div>
                 
                 {/* Name */}
                 <div>
