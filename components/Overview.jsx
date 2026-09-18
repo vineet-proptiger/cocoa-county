@@ -76,11 +76,11 @@ const Overview = ({ setIsOpen }) => {
                 >
                   W
                 </span>
-                <span style={{ fontWeight: '700', color: '#FFFFFF' }}>e</span> believe in giving your dreams a fresh start, big or small. At Cocoa County, we're here to reignite the dream of home ownership and build a future filled with possibilities that offer security and a strong foundation for growth. With thoughtfully designed 3 & 4 BHK residences by County Group, we're committed to securing your investment and creating a thriving community.
+                <span style={{ fontWeight: '700', color: '#FFFFFF' }}>e</span> believe in giving your dreams a fresh start, big or small. At Cocoa County, we're here to reignite the dream of home ownership and build a future filled with possibilities that offer security and a strong foundation for growth. With thoughtfully designed 3 & 4 BHK residences by County Group, we're committed to securing your investment and creating a thriving community. Located in Sector 88A, Gurugram, Cocoa County is spread across approximately 24 acres, planned with 844 premium apartments across nine towers, crafted so that your dreams can truly take root and flourish. An address shaped by infrastructure, clarity of planning, and long-term relevance, Cocoa County sits within one of Gurugram's most forward-moving residential corridors — well-connected to major expressways, yet set apart from the congestion of older districts.
                 {!isExpanded ? '... ' : ' '}
                 {isExpanded && (
                   <span>
-                    Located in Sector 88A, Gurugram, Cocoa County is spread across approximately 24 acres, planned with 844 residences across nine towers, crafted so that your dreams can truly take root and flourish. An address shaped by infrastructure, clarity of planning and long-term relevance, Cocoa County sits within one of Gurugram's most forward-moving residential corridors — well connected, yet set apart from the congestion of older districts.
+                    Every aspect of this project is meticulously designed to offer world-class amenities, lush green landscapes, and an unparalleled lifestyle. Experience the perfect blend of modern architecture and nature, ensuring a peaceful and luxurious living environment for you and your family.
                   </span>
                 )}
 
