@@ -38,8 +38,8 @@ const Footer = () => (
         
         {/* RERA Block */}
         <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.05)', padding: '10px 24px', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <span style={{ fontFamily: F_SANS, fontSize: '14px', color: '#aaa' }}>RERA No :</span>
-          <strong style={{ fontFamily: F_JOST, fontSize: '15px', color: '#fff', letterSpacing: '0.04em' }}>Comming Soon</strong>
+          <span style={{ fontFamily: F_SANS, fontSize: '14px', color: '#aaa', marginRight: '8px' }}>RERA No :</span>
+          <strong style={{ fontFamily: F_JOST, fontSize: '14px', color: '#fff', letterSpacing: '0.04em' }}>RC/REP/HARERA/GGM/1086/818/2026/58</strong>
         </div>
       </div>
 

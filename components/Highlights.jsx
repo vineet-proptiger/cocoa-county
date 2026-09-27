@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { MapPin, Crown, TreePine, Sparkles, TrendingUp } from 'lucide-react'
+import { MapPin, Crown, TreePine, Sparkles, Award } from 'lucide-react'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
@@ -27,9 +27,9 @@ const highlightsData = [
     desc: 'Grand clubhouse, infinity swimming pool, wellness spa, sports courts, and 24/7 security.',
   },
   {
-    icon: TrendingUp,
-    title: 'High Growth & Investment Value',
-    desc: "Developed by County Group in one of Gurugram's fastest-growing real estate corridors.",
+    icon: Award,
+    title: 'A Premium Lifestyle Destination',
+    desc: "Crafted by County Group to offer an elevated standard of living in Gurugram's most sought-after neighborhood.",
   },
 ]
 
